@@ -25,7 +25,7 @@ class App:
             a = cursor.fetchall()
             print(a)
             if len(a) > 0:
-                return
+                continue
             else:
                 cursor.execute("""INSERT INTO ID_used (Id_used) 
                                   VALUES ("{}");""".format(name))
