@@ -35,7 +35,7 @@ class App:
                 self.update_database(j)
 
     def update_database(self, arg):
-        conn = pymysql.connect(host="www.db4free.net", user="linad2997", password="london1997", database="cual2000")
+        conn = pymysql.connect(host="www.db4free.net", user="linad2997", password="********", database="cual2000")
         cursor = conn.cursor()
         if arg["type"] == "app":
             p = p_app
