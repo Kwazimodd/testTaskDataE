@@ -16,7 +16,7 @@ class App:
         return requests.get(self.bucket + "files_list.data").content.splitlines()
 
     def get_data(self, arr):
-        conn = pymysql.connect(host="www.db4free.net", user="linad2997", password="london1997", database="cual2000")
+        conn = pymysql.connect(host="*****", user="******", password="*******", database="cual2000")
         cursor = conn.cursor()
         for i in arr:
             name = (str(i))[2:-1:1]
